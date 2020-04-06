@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { OverlayTrigger, Button, Popover } from "react-bootstrap";
+import Board from "./Board";
+import MenuOverlay from "./MenuOverlay";
+import Display from "./Display";
 
 class Game extends Component {
   constructor(props) {
@@ -138,7 +140,13 @@ class Game extends Component {
 
   render() {
     const { board, gameStarted, gameOver, gameWon } = this.state;
-    return <section></section>;
+    return (
+      <section>
+        <MenuOverlay handleNewGame={this.handleNewGame} />
+        <Display {...{ gameStarted, gameWon, gameOver }} />
+        <Board board={board} handleTile={this.handleTile} />
+      </section>
+    );
   }
 }
 
