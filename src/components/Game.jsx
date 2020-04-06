@@ -66,6 +66,7 @@ class Game extends Component {
         });
       });
       this.revealEmpties(newBoard, row, col);
+      console.log("the new board is ", newBoard);
       this.setState({ board: newBoard });
       const revealed = this.getRevealedCount(newBoard);
       const totalEmpty =

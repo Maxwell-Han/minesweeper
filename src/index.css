@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.popover {
+  max-width: 100% !important;
+}
+
+.menu-label {
+  text-align: center;
+}
+
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+
+.new-game-button {
+  align-self: center;
+  margin-top: 6px;
+}
+
+.form-check {
+  text-align: left;
+}
+
+#customW, #customH, #customBombs {
+  width: 4rem;
+  margin: auto;
+  text-align: right;
+}
+
+.col {
+  text-align: center;
+}
+
+.board-container {
+  margin: auto;
+}
+
+.flag-img, .mine-img {
+  width: 90%;
+}
+
+.tile-unrevealed {
+  background: lightgray;
+  box-shadow: inset 0 0 4px 3px rgba(240, 240, 240, 1);
+}
+
+.tile-unrevealed:active {
+  background-color: darkgray;
+  box-shadow: inset 0 0  2px 2px  rgba(191,191,191,1);
+}
