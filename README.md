@@ -1,11 +1,10 @@
 # Minesweeper
+[Play now!](https://maxwell-han.github.io/minesweeper/)
 
 ## Tech
 
 - [React](https://facebook.github.io/react/)
 - [React Bootstrap (UI)](https://react-bootstrap.github.io/)
-
-[Play now!](https://maxwell-han.github.io/minesweeper/)
 
 ## Local Setup
 
