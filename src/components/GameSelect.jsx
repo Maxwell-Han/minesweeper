@@ -16,7 +16,7 @@ function GameSelect(props) {
     customBombs: 9,
   });
 
-  onst handleChange = (e) => {
+  const handleChange = (e) => {
     const choice = e.target.id;
     const selections = Object.keys(selection);
     if(!selections.includes(choice)) return null;
