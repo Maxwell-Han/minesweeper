@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <h5>MineSweeper</h5>
+      <h5 style={{marginTop: "2rem"}}>MineSweeper</h5>
       <Game />
     </div>
   );

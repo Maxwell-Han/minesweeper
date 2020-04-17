@@ -5,9 +5,9 @@ const Board = (props) => {
   const { board, handleTile, mineCount } = props || { board: [] };
   return (
     <section>
+      {!board.length && <h5>Pick a Game</h5>}
       <table className="board-container">
         <tbody>
-          {!board.length && <h5>Pick a Game</h5>}
           {board.length > 0 &&
             board.map((row, r) => {
               return (

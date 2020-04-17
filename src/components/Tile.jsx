@@ -1,4 +1,5 @@
 import React from "react";
+import mine from '../images/minesweeper_bomb.png'
 
 const Tile = (props) => {
   const {
@@ -39,7 +40,7 @@ const Tile = (props) => {
         <img src="flag.png" alt="flag" className="flag-img" />
       ) : null}
       {isMine && isRevealed ? (
-        <img src="minesweeper_bomb.png" alt="bomb" className="mine-img" />
+        <img src={mine} alt="bomb" className="mine-img" />
       ) : null}
       {isRevealed && mineCount ? mineCount : null}
     </td>
